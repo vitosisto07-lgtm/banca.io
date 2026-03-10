@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sponsor Banner Logic
     sponsorBanner.addEventListener('click', () => {
-        window.location.href = "file:///C:/Users/vitos/Documents/pcto%202026/finanza%20facile/index.html";
+        window.location.href = "../finanza%20facile/index.html";
     });
 
     // Account Switcher Logic
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             const label = item.querySelector('span').innerText.toLowerCase();
             if (label === 'home') return; // Stay on index.html
-            
+
             // Navigate to appropriate page
             window.location.href = `${label}.html`;
         });
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         // Stash the event so it can be triggered later.
         deferredPrompt = e;
-        
+
         // Optionally show your install UI
         if (installBtn) installBtn.style.display = 'flex';
         if (installBtnLifestyle) installBtnLifestyle.style.display = 'flex';

@@ -13,10 +13,11 @@
     --sheet-bg: #F3F4F6;
     --glass-bg: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(255, 255, 255, 0.2);
-    
+
     --expense-color: #EF4444;
     --income-color: #10B981;
-    --primary-green: var(--primary-blue); /* Fallback/Compatibility */
+    --primary-green: var(--primary-blue);
+    /* Fallback/Compatibility */
 }
 
 * {
@@ -37,13 +38,14 @@ body {
 
 .app-container {
     width: 100%;
-    max-width: 414px; /* iPhone Max width */
+    max-width: 414px;
+    /* iPhone Max width */
     height: 100vh;
     max-height: 896px;
     background: linear-gradient(135deg, var(--bg-gradient-top) 0%, var(--bg-gradient-bottom) 100%);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-height: 897px) {
@@ -74,7 +76,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    padding-top: 40px; /* Safe area */
+    padding-top: 40px;
+    /* Safe area */
 }
 
 .account-toggle {
@@ -131,6 +134,7 @@ body {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -250,7 +254,7 @@ body {
 .search-bar i {
     font-size: 14px;
     margin-right: 10px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .search-bar input {
@@ -261,8 +265,9 @@ body {
     outline: none;
     width: 100%;
 }
+
 .search-bar input::placeholder {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .header-icons {
@@ -354,7 +359,7 @@ body {
 
 .circle-btn:active {
     transform: scale(0.95);
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .action-btn-group span {
@@ -369,7 +374,8 @@ body {
     background: var(--card-bg);
     border-radius: 24px 24px 0 0;
     padding: 20px;
-    padding-bottom: 80px; /* Space for nav */
+    padding-bottom: 80px;
+    /* Space for nav */
     overflow-y: auto;
 }
 
@@ -413,6 +419,7 @@ body {
     font-weight: 600;
     margin-bottom: 4px;
 }
+
 .sponsor-text .highlight {
     color: var(--primary-blue);
     font-weight: 700;
@@ -514,7 +521,8 @@ body {
     background: var(--pure-white);
     display: flex;
     justify-content: space-around;
-    padding: 15px 10px 25px 10px; /* Safe area padding */
+    padding: 15px 10px 25px 10px;
+    /* Safe area padding */
     border-top: 1px solid #e5e7eb;
     z-index: 20;
 }
@@ -546,7 +554,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0a1b26; /* Deep, dark blue */
+    background: #0a1b26;
+    /* Deep, dark blue */
     z-index: 5;
     transform: translateX(-30%);
     opacity: 0;
@@ -560,7 +569,8 @@ body {
     transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
-    z-index: 30; /* Bring above main content when open */
+    z-index: 30;
+    /* Bring above main content when open */
 }
 
 /* When menu is open, move main content right slightly and scale down */
@@ -608,19 +618,25 @@ body {
     border-radius: 16px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .card-bg {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
     z-index: 1;
 }
 
 .card-content {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 2;
     padding: 20px;
     display: flex;
@@ -646,7 +662,7 @@ body {
     letter-spacing: 2px;
     font-family: monospace;
     margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .card-footer {
@@ -687,14 +703,14 @@ body {
 }
 
 .action-item:active {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .action-icon {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -725,7 +741,7 @@ body {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .add-wallet-btn i {
