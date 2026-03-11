@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investimenti - Banca Hubitat</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <header class="app-header">
+                <button class="icon-btn" onclick="window.location.href='index.html'"><i class="fas fa-arrow-left"></i></button>
+                <h2>Investimenti</h2>
+                <div class="profile-icon">VS</div>
+            </header>
+
+            <section class="balance-section">
+                <p class="balance-label">Valore Portafoglio</p>
+                <h1 class="balance-amount">€ 8.750,00</h1>
+                <div style="color: #10B981; font-size: 14px; font-weight: 600;">+12.5% quest'anno</div>
+            </section>
+
+            <div class="bottom-sheet">
+                <div class="transactions-header">
+                    <h3>I tuoi assets</h3>
+                </div>
+                
+                <div class="transaction-item">
+                    <div class="tx-icon income" style="background: #e0f2fe; color: #0EA5E9;"><i class="fas fa-chart-line"></i></div>
+                    <div class="tx-details">
+                        <h4>S&P 500 ETF</h4>
+                        <p>5 quote • +4.2%</p>
+                    </div>
+                    <div class="tx-amount">€ 2.140,00</div>
+                </div>
+
+                <div class="transaction-item">
+                    <div class="tx-icon income" style="background: #e0f2fe; color: #0EA5E9;"><i class="fas fa-building"></i></div>
+                    <div class="tx-details">
+                        <h4>Real Estate Fund</h4>
+                        <p>10 quote • +1.5%</p>
+                    </div>
+                    <div class="tx-amount">€ 1,500.00</div>
+                </div>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <button class="add-wallet-btn" style="background: var(--primary-blue);">Esplora nuovi fondi</button>
+                </div>
+            </div>
+
+            <nav class="bottom-nav">
+                <div class="nav-item" onclick="window.location.href='index.html'">
+                    <i class="fab fa-envira"></i>
+                    <span>Home</span>
+                </div>
+                <div class="nav-item active">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Investi</span>
+                </div>
+                <div class="nav-item" onclick="window.location.href='trasferisci.html'">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Trasferisci</span>
+                </div>
+                <div class="nav-item" onclick="window.location.href='crypto.html'">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Crypto</span>
+                </div>
+                <div class="nav-item" onclick="window.location.href='lifestyle.html'">
+                    <i class="fas fa-th-large"></i>
+                    <span>Lifestyle</span>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
